@@ -15,5 +15,7 @@ public class Main {
         System.out.println (prime.isPrime ( numbers[4]) );
         System.out.println (pd.onlyPrimes ( numbers ) );
 
+        System.out.println (prime.firstFourNumbers ( numbers) );
+
     }
 }
