@@ -50,4 +50,18 @@ public class PrimeDirective {
 
 
     //method that returns an ArrayList of the first n Fibonacci numbers
+
+    public ArrayList<Integer>  fibonacci(int[] numbers){
+        ArrayList<Integer> fibonacciNumbers = new ArrayList<> (  );
+        if ( numbers.length<3 ){
+            System.out.println ("InValid Array length" );
+        }
+        for (int i = 2 ; i < numbers.length; i++) {
+            if ( numbers[i] == (numbers[i-1] ) + (numbers[i-2] ) ) {
+                fibonacciNumbers.add ( numbers[i]);
+            }
+        }
+        return fibonacciNumbers;
+
+    }
 }
